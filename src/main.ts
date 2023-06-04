@@ -14,6 +14,7 @@ async function bootstrap() {
     .setTitle('Chat backend')
     .setDescription('Chat backend API description')
     .setVersion('0.1')
+    .addBearerAuth()
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
