@@ -1,14 +1,14 @@
 version: '3.8'
 services:
   dev-db:
-    image: postgres:13
+    image: postgres:14
     ports:
       - 5434:5432
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123
-      POSTGRES_DB: nest
+      POSTGRES_DB: chat_back
     networks:
-      - freecodecamp
+      - pnmrvvtl
 networks:
-  freecodecamp:
+  pnmrvvtl:
